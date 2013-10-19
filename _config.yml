@@ -1,0 +1,5 @@
+name: mousenews
+markdown: redcarpet
+pygments: true
+source: source
+destination: public
