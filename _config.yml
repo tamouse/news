@@ -3,3 +3,4 @@ markdown: redcarpet
 pygments: true
 source: source
 destination: public
+paginate: 50

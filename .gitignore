@@ -1,1 +1,4 @@
-_site
+source/_posts/
+.crontab.log
+public/
+tmp/
