@@ -1,3 +1,6 @@
+require 'rubygems'
+require 'bundler/setup'
+
 require './log4r_setup'
 require 'open3'
 
