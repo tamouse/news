@@ -1,4 +1,4 @@
-require 'log4r_setup'
+require './log4r_setup'
 require 'open3'
 
 task :default => :update

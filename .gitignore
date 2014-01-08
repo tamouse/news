@@ -3,3 +3,4 @@ source/_posts/
 public/
 tmp/
 log/
+.bundle/
