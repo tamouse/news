@@ -33,6 +33,7 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
       rb-kqueue (>= 0.2)
+    log4r (1.1.10)
     loofah (1.2.1)
       nokogiri (>= 1.4.4)
     maruku (0.7.0)
@@ -69,4 +70,5 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
+  log4r
   planet
