@@ -1,16 +1,16 @@
 <!-- Pagination links -->
-<div class="pagination">
-  <a href="/index.html" class="first">First</a>
+<ul class="pager">
+  <li class="previous"><a href="/">&laquo; First</a></li>
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+  <li class="previous"><a href="{{ paginator.previous_page_path }}">&larr; Previous</a></li>
   {% else %}
-    <span class="previous">Previous</span>
+  <li class="previous disabled"><a href="{{ paginator.previous_page_path }}">&larr; Previous</a></li>
   {% endif %}
-  <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  <li><span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span></li>
+  <li class="next"><a href="/page{{paginator.total_pages}}">Last &raquo;</a></li>
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  <li class="next"><a href="{{ paginator.next_page_path }}">Next &rarr;</a></li>
   {% else %}
-    <span class="next">Next</span>
+  <li class="next disabled"><a href="{{ paginator.next_page_path }}">Next &rarr;</a></li>
   {% endif %}
-  <a href="/page{{paginator.total_pages}}" class="last">Last</a>
-</div>
+</ul>

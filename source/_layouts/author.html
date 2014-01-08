@@ -1,8 +1,34 @@
 
 
-<div class="author">
-  <img class="author_image" src="{{ image_url }}" style="width: 96px; height: 96;">
-  <span>
-    <i><a href="{{post_url}}">Original post</a> by <a href="{{ twitter_url }}">{{ author }}</a> - check out <a href="{{ blog_url }}">{{ blog_name }}</a></i>
-  </span>
-</div>
+
+{% endraw %}
+
+<address class="row">
+  <div class="col-xs-12 col-md-8">
+    <a href="{{post_url}}"
+       title="{{page.title}}"
+       target="_blank"
+       rel="follow,index"
+       >Original post</a>
+    by
+    {% if twitter_url %}
+    <a href="{{ twitter_url }}"
+       target="_blank"
+       rel="follow,index"
+       >{{ author }}
+    </a>
+    {% else %}
+      {{ author }}
+    {% endif %}
+    at
+    <a href="{{ blog_url }}"
+       title="{{blog_name}}"
+       target="_blank"
+       >{{ blog_name }}
+    </a>
+  </div>
+  <div class="col-xs-12 col-md-4">
+    <img class="author_image" src="{{ image_url }}" style="width: 96px; height: 96;">
+  </div>
+
+</address>

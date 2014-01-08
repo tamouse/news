@@ -3,14 +3,25 @@ layout: default
 title: index
 ---
 
+<div class="container">
+
 {% include pagenavs.html %}
 
-<div id="home">
-  <ol class="posts">
+<div id="home" class="row">
     {% for post in paginator.posts %}
-      <li><span class="pubdate">{{ post.date | date_to_string }}</span> &raquo; <a class="posttitle" href="{{ post.url }}">{{ post.title }}</a></li>
+      <div class="col-xs-12 col-md-2">
+        {{ post.date | date_to_string }}
+      </div>
+      <div class="col-xs-12 col-md-10">
+        <a class="posttitle"
+           href="{{ post.url }}"
+           >{{ post.title }}
+        </a>
+      </div>
     {% endfor %}
-  </ol>
 </div>
 
 {% include pagenavs.html %}
+
+  
+</div>

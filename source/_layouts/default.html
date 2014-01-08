@@ -9,20 +9,19 @@
     <!-- syntax highlighting CSS -->
     <link rel="stylesheet" href="/css/syntax.css">
 
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
 
   </head>
   <body>
+    {% include site/header.html %}
+    {{ content }}
 
-    <div class="site">
-      <div class="header">
-        <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-      </div>
-
-      {{ content }}
-
-    </div>
+    
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
 
   </body>
 </html>
