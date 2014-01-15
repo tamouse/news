@@ -16,8 +16,11 @@ task :planet do |t|
   o,e,st = Open3.capture3("planet generate -e html")
   if st.success?
     Log.info "Planet generate complete"
+    Log.info o.split("\n").last
   else
     Log.error "planet generate failed: #{st.exitstatus}: #{e}"
+    Log.debug o
+    Log.debug e
     raise "Planet generate failed: #{e}"
   end
 end
@@ -28,8 +31,11 @@ task :jekyll do |t|
   o,e,st = Open3.capture3("jekyll build")
   if st.success?
     Log.info "Jekyll build complete"
+    Log.info o
   else
     Log.error "Jekyll build failed: #{st.exitstatus}: #{e}"
+    Log.debug o
+    Log.debug e
     raise "Jekyll build failed: #{e}"
   end
 end
