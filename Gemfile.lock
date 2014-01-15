@@ -1,3 +1,13 @@
+GIT
+  remote: git://github.com/tamouse/planet.rb.git
+  revision: 2c75d477e4e603bb03aa30da931045dad3078d3f
+  specs:
+    planet (0.5.2)
+      box
+      feedzirra
+      gli
+      mustache
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -17,18 +27,18 @@ GEM
     ffi (1.9.3)
     gli (2.8.1)
     highline (1.6.20)
-    jekyll (1.4.2)
+    jekyll (1.4.3)
       classifier (~> 1.3)
       colorator (~> 0.1)
       commander (~> 4.1.3)
-      liquid (~> 2.5.2)
+      liquid (~> 2.5.5)
       listen (~> 1.3)
       maruku (~> 0.7.0)
       pygments.rb (~> 0.5.0)
       redcarpet (~> 2.3.0)
       safe_yaml (~> 0.9.7)
       toml (~> 0.1.0)
-    liquid (2.5.4)
+    liquid (2.5.5)
     listen (1.3.1)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
@@ -36,18 +46,13 @@ GEM
     log4r (1.1.10)
     loofah (1.2.1)
       nokogiri (>= 1.4.4)
-    maruku (0.7.0)
+    maruku (0.7.1)
     mini_portile (0.5.2)
     mustache (0.99.5)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
     parslet (1.5.0)
       blankslate (~> 2.0)
-    planet (0.5.1)
-      box
-      feedzirra
-      gli
-      mustache
     posix-spawn (0.3.8)
     pygments.rb (0.5.4)
       posix-spawn (~> 0.3.6)
@@ -71,4 +76,4 @@ PLATFORMS
 DEPENDENCIES
   jekyll
   log4r
-  planet
+  planet!
