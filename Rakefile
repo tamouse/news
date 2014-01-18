@@ -13,7 +13,7 @@ end
 desc "Run planet generate"
 task :planet do |t|
   Log.info "Planet generate"
-  o,e,st = Open3.capture3("planet generate -e html")
+  o,e,st = Open3.capture3("bundle exec planet generate -e html")
   if st.success?
     Log.info "Planet generate complete"
     Log.info o.split("\n").last
@@ -28,7 +28,7 @@ end
 desc "Run jekyll build"
 task :jekyll do |t|
   Log.info "Jekyll build"
-  o,e,st = Open3.capture3("jekyll build")
+  o,e,st = Open3.capture3("bundle exec jekyll build")
   if st.success?
     Log.info "Jekyll build complete"
     Log.info o
