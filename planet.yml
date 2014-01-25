@@ -6,7 +6,11 @@ planet:
     whitelisted_tags: []
 
 blogs:
-  # Bare minimum to get it working
+  - feed:   "http://feeds.feedburner.com/halfbakedharvest/fJLB"
+    author: "Tieghan"
+    twitter: "hbharvest"
+    url:     "http://www.halfbakedharvest.com/"
+    image:   "http://hbh.halfbakedharvest.netdna-cdn.com/wp-content/uploads/2014/01/header_logo.png"
   - author: "tamouse"
     feed:   "http://blog.tamouse.org/atom.xml"
     twitter: "tamouse"
