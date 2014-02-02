@@ -1,12 +1,20 @@
 GIT
   remote: git://github.com/tamouse/planet.rb.git
-  revision: 2c75d477e4e603bb03aa30da931045dad3078d3f
+  revision: f4acfddb3308f768476d478264478aef80b5f01c
   specs:
     planet (0.5.2)
       box
       feedzirra
       gli
       mustache
+
+GIT
+  remote: git://github.com/tamouse/whenever.git
+  revision: 6376098e703c48b46c9e9bf78321be98ac4e7671
+  specs:
+    whenever (0.9.0)
+      activesupport (>= 2.3.4)
+      chronic (>= 0.6.3)
 
 GEM
   remote: https://rubygems.org/
@@ -40,7 +48,7 @@ GEM
       loofah (~> 1.2.1)
       sax-machine (~> 0.2.1)
     ffi (1.9.3)
-    gli (2.8.1)
+    gli (2.9.0)
     highline (1.6.20)
     i18n (0.6.9)
     jekyll (1.4.3)
@@ -69,7 +77,7 @@ GEM
     mustache (0.99.5)
     net-scp (1.1.2)
       net-ssh (>= 2.6.5)
-    net-ssh (2.7.0)
+    net-ssh (2.8.0)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
     parslet (1.5.0)
@@ -100,9 +108,6 @@ GEM
     toml (0.1.0)
       parslet (~> 1.5.0)
     tzinfo (0.3.38)
-    whenever (0.9.0)
-      activesupport (>= 2.3.4)
-      chronic (>= 0.6.3)
     yajl-ruby (1.1.0)
 
 PLATFORMS
@@ -114,4 +119,4 @@ DEPENDENCIES
   jekyll
   log4r
   planet!
-  whenever
+  whenever!
