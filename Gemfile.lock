@@ -24,6 +24,9 @@ GEM
       i18n
       rake (>= 10.0.0)
       sshkit (~> 1.3)
+    capistrano-bundler (1.1.1)
+      capistrano (~> 3.0)
+      sshkit (>= 1.2.0)
     chronic (0.10.2)
     classifier (1.3.4)
       fast-stemmer (>= 1.0.0)
@@ -107,6 +110,7 @@ PLATFORMS
 
 DEPENDENCIES
   capistrano (~> 3.1)
+  capistrano-bundler
   jekyll
   log4r
   planet!
