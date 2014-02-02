@@ -6,6 +6,9 @@ planet:
     whitelisted_tags: []
 
 blogs:
+  - feed:   "http://laurelai.info/index.php/feed/"
+    author: "laurelai"
+    url:    "http://laurelai.info/"
   - feed:   "http://feeds.feedburner.com/halfbakedharvest/fJLB"
     author: "Tieghan"
     twitter: "hbharvest"
