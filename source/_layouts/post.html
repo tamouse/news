@@ -1,46 +1,44 @@
 ---
 layout: default
 ---
-<div class="row">
-  <nav class="col-xs-12 col-md-2" role="navigation">
-    {% if page.previous.url %}
-    <a href="{{page.previous.url}}"
-       class="previous"
-       title="Previous Post: {{page.previous.title}}">
-      <i class="glyphicon glyphicon-chevron-left"></i>
-      {{page.previous.title}}
-    </a>
-  {% endif %}
-  </nav>
+<div class="container">
+  <div class="row">
+    <nav class="col-xs-12 col-md-2" role="navigation">
+      {% if page.previous.url %}
+      <a href="{{page.previous.url}}"
+         class="previous"
+         title="Previous Post: {{page.previous.title}}">
+        <i class="glyphicon glyphicon-chevron-left"></i>
+        {{page.previous.title}}
+      </a>
+      {% endif %}
+    </nav>
 
-  <article class="col-xs-12 col-md-8">
-    <h4>
-      <a href="{{page.post_url}}"
-         title="{{page.title}}"
-         target="_blank">{{page.title}}</a>
-      <small class="meta">{{ page.date | date_to_string }}</small>
-    </h4>
+    <article class="col-xs-12 col-md-8">
+      <h4>
+        <a href="{{page.post_url}}"
+           title="{{page.title}}"
+           target="_blank">{{page.title}}</a>
+        <small class="meta">{{ page.date | date_to_string }}</small>
+      </h4>
+      <p class="meta">
+        Categories: {{ page.categories | join: ", "}}
+      </p>
+      <p class="post">
+        {{ content }}
+      </p>
+    </article>
 
-    <p class="meta">
-      Categories: {{ page.categories | join: ", "}}
-    </p>
+    <nav class="col-xs-12 col-md-2" role="navigation">
+      {% if page.next.url %}
+      <a href="{{page.next.url}}"
+         class="next"
+         title="Next Post: {{page.next.title}}">
+        {{page.next.title}}
+        <i class="glyphicon glyphicon-chevron-right"></i>
+      </a>
+      {% endif %}
+    </nav>
 
-
-    <p class="post">
-      {{ content }}
-    </p>
-    
-  </article>
-
-  <nav class="col-xs-12 col-md-2" role="navigation">
-    {% if page.next.url %}
-    <a href="{{page.next.url}}"
-       class="next"
-       title="Next Post: {{page.next.title}}">
-      {{page.next.title}}
-      <i class="glyphicon glyphicon-chevron-right"></i>
-    </a>
-    {% endif %}
-  </nav>
-
+  </div>
 </div>
